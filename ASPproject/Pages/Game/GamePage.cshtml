@@ -1,0 +1,41 @@
+﻿@page
+@model ASPproject.Pages.Game.GamePageModel
+@{
+}
+
+
+
+
+<form method="post" asp-page-handler="Submit">
+    @foreach (var word in Model.WordList)
+    {
+        <div class="containerForm">
+            <div class="labelWord">
+                <p>Угадай что за слово: <span class="remadeWord">@word.remadeWord</span></p>
+            </div>
+            <div class="form">
+                <p>Ваш ответ:
+                        <input autocomplete="off" class="input" name="Answer" type="text">
+                </p>
+                <div class="button">
+                    <input type="submit" value="Проверить" />
+                </div>
+                
+                <input type="hidden" name="CorrectAnswer" value="@word.mainWord">
+            </div>
+        </div>
+    }
+</form>
+<p class="count" name="NumberAnswer">Верных ответов:  @Model.NumberAnswer</p>
+
+
+
+
+
+
+
+
+
+
+
+

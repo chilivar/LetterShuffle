@@ -1,0 +1,72 @@
+﻿@page
+@model ASPproject.Pages.Game.ResponsePageModel
+@{
+}
+
+
+
+
+<div class="wrongAnswer" style="display: @(Model.IsCorrect ? "none" : "block")">
+    <div class="indicator">
+        <p class="wrongText">Неправильно!</p>
+    </div>
+    <div class="correctAnswer">
+        <p>Правильный ответ: <span class="answer">@Model.CorrectAnswer</span></p>
+    </div>
+    <div class="userAnswer">
+        <p>Твой ответ: <span class="answer">@Model.Answer</span></p>
+    </div>
+    <div class="btn-next">
+        <a class="style-button" asp-page="/Game/GamePage">Продолжить</a>
+    </div>
+</div>
+
+<div class="rightAnswer" style="display: @(Model.IsCorrect ? "block" : "none")">
+    <div class="indicator">
+        <p class="rightText">Правильно!</p>
+    </div>
+    <div class="correctAnswer">
+        <p>Правильный ответ: <span class="answer">@Model.CorrectAnswer</span></p>
+    </div>
+    <div class="userAnswer">
+        <p>Твой ответ: <span class="answer">@Model.Answer</span></p>
+    </div>
+    <div class="btn-next">
+        <a class="style-button" asp-page="/Game/GamePage">Продолжить</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+@* <div class="containerResult">
+    <div class="checkMess">
+        <p id="message">@Model.Message</p>
+    </div>
+    <div class="trueAnswer">
+        <p>@Model.CorrectAnswer</p>
+    </div>
+    <div class="userAnswer">
+        <p>@Model.Answer</p>
+    </div>
+    <div class="btn-next">
+        <a class="style-button" asp-page="/Game/GamePage">Продолжить</a>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var messageElement = document.getElementById("message");
+        var messageText = messageElement.textContent.trim();
+
+        if (messageText === "Правильно!") {
+            messageElement.classList.add("correct");
+        } else {
+            messageElement.classList.add("incorrect");
+        }
+    });
+</script> *@

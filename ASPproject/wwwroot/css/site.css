@@ -1,0 +1,387 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+    background-color: #303D50;
+    
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.navbar {
+    background-color: #2C3849;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    position: relative;
+    left: -200px;
+}
+
+.profile-user {
+    position: relative;
+    left: 130px;
+}
+.navbar-nav {
+    padding-left: 400px;
+    
+
+}
+.navbar-nav .nav-item:hover {
+     color: yellow;
+     transition: 1s;
+}
+
+
+/*Форма*/
+
+
+
+
+.containerForm {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 36px;
+    
+}
+
+.count {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 36px;
+    padding-top: 60px;
+    padding-left: 179px;
+}
+
+.labelWord {
+    padding-left: 170px;
+    padding-top: 60px;
+
+}
+
+.input {
+    background-color: #303D50;
+    border: 1px solid #106CF5;
+    border-radius: 20px;
+    color: #F3E24B;
+    width: 314px;
+    height: 50px;
+    outline: none;
+    text-align: center;
+}
+
+.input:hover {
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+.button {
+    margin-left:160px;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+    .button input {
+        
+        background-color: #F3E24B;
+        color: black;
+        border-color: #000000;
+        border-radius: 20px;
+        border: 2 px;
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .button input:hover {
+        box-shadow: 0 0 7px rgba(0,0,0,0.5);
+    }
+
+.remadeWord {
+    color: #F3E24B;
+}
+
+.form {
+    padding-top: 70px;
+    padding-left: 550px;
+}
+
+.wrongAnswer, .rightAnswer {
+    width: 500px;
+    height: 500px;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.wrongText, .rightText {
+    padding-top: 60px;
+    font-size: 36px;
+    color: #DB1010;
+    text-align: center;
+}
+
+.rightText {
+    color: green;
+}
+
+
+
+.correctAnswer, .userAnswer {
+    color: #FFFFFF;
+    font-size: 36px;
+    
+    
+}
+
+
+
+.correctAnswer p {
+    text-align: center;
+}
+
+.trueAnswer {
+    width: 700px;
+    height: 46px;
+    
+}
+
+.userAnswer {
+    text-align: center;
+}
+
+
+.btn-next {
+    width: 171px;
+    height: 50px;
+    background-color: #F3E24B;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 130px;
+    margin-top: 60px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.style-button {
+    padding-bottom: 20px; 
+    text-decoration: none;
+    color: #000000;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+    .style-button:hover {
+        color: black;
+    }
+
+    .btn-next:hover {
+        background-color: #EDE172;
+        color: black;
+        color: #EDE172;
+    }
+
+
+.indicator {
+    font-size: 36px;
+    
+}
+
+
+.wrongAnswer {
+    display: none;
+}
+
+
+
+.rightAnswer {
+    display: none;
+}
+
+.answer {
+    color: #F3E24B;
+}
+
+
+/*login*/
+
+
+/*.button {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align:center;
+    border: 2px solid #F3E24B;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.50s;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+} 
+
+.button::hover {
+    background: yellow;
+}*/
+
+
+.box {
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #354459;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.box:hover {
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #354459;
+    text-align: center;
+    box-shadow: 1px 1px 15px 1px #354459;
+    transition: 0.45s;
+}
+
+
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500px;
+
+}
+
+.but {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #106CF5;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: #F3E24B;
+    border-radius: 24px;
+    transition: 0.50s;
+    font-size: 26px;
+}
+
+.but:focus {
+    width: 260px;
+    border-color: #106CF5;
+}
+
+.btnLogin {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #F3E24B;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.5s;
+    cursor: pointer;
+    caret-color: transparent;
+}
+
+.btnLogin:hover {
+    background: #F3E24B;
+}
+
+
+
+/*userPage*/
+
+.userPage {
+    font-family: "Montserrat", sans-serif;
+}
+
+.profile {
+    color: white;
+    font-size: 56px;
+    width: 200px;
+    height:70px;
+    margin:auto;
+    margin-top: 120px;
+}
+
+.containerUser {
+    display: flex;
+    column-gap: 20px;
+    background-color: #354459;
+    width: 850px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.containerUser:hover {
+    box-shadow: 1px 1px 15px 1px #354459;
+    transition: 0.45s;
+}
+
+
+
+.userField {
+    font-size: 36px;
+    color: white;
+    padding: 20px;
+}
+
+.imageUser {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    padding-top: 45px;
+}
+
+    .imageUser img:hover {
+        box-shadow: 1px 1px 15px 1px #F3E24B;
+        transition: 0.45s;
+    }
+
